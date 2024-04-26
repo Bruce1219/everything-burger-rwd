@@ -1,0 +1,539 @@
+body{
+    font-family: 'Noto Sans TC',sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    /* font-size: 1rem; */
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;/*可以改fixed*/
+    top: 0;
+    z-index: 9998;
+    background-color:transparent;
+    transition: background-color 0.3s ease;
+}
+.logo{
+    width: 70px;
+    height: 55px;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.logo img{
+    width: 100%;
+    transition: opacity 0.3s ease; 
+}
+#logo2{
+    display: none;
+}
+.nav-list{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.hb{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;    
+    margin: 0 30px;
+}
+.fa-bars{
+    font-size: 30px;
+    color: #fff;
+    transition: 0.5s;
+}
+.fa-bars:hover {
+    color: #EB2222;
+}
+@media screen and (min-width:1200px) {
+    .navbar{
+        position: fixed;
+        top: 0;
+    }
+    .logo{
+        width: 90px;
+        height: 70px;
+    }
+    .hb{
+        display: none;
+    }
+    .nav-list{
+        display: flex;
+        /* margin: 30px 0; */
+        padding: 0 0 0 250px;
+    }
+    .nav-item{
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bolder;
+        margin: 0 20px;
+        border-bottom:solid 2px hsla(0, 83%, 53%, 0);
+        padding: 0 0 5px;
+        transition: 0.1s;
+    }
+    .nav-item:hover{
+        border-bottom:solid 2px hsl(0, 83%, 53%);
+    }
+
+}
+
+.hidden-nav{
+    /* display: none; */
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    top: 0;    
+    right: 0;
+    transition: 0.5s;
+}
+.list-hidden{
+    /* display: flex; */
+    margin: 30px;
+    /* padding: 0 0 0 250px; */
+}
+.item-hidden{
+    display: inline-block;
+    font-size: 20px;
+    color:#595959;
+    font-weight: bolder;
+    margin: 15px 0;
+    border-bottom:solid 2px hsla(0, 83%, 53%, 0);
+    padding: 0 0 5px;
+    transition: 0.1s;
+}
+.item-hidden:hover{
+    border-bottom:solid 2px hsl(0, 83%, 53%);
+}
+.hb-hidden{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;    
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+.fa-xmark{
+    color: #EB2222;
+    font-size: 35px;
+}
+hr{
+    width: 90%;
+    color: #595959;
+    margin: 5px auto;
+}
+.social-hidden{
+    margin:30px;
+}
+.social-hidden i{
+    color: #595959;
+    font-size: 24px;
+    margin: 10px;
+}
+/* @media screen and (min-width:1200px) {
+    .hidden-nav{
+        display: none;
+    }
+} */
+.red{
+    font-size: 1.5vw;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color:#fff;
+    padding: 7px 20px;
+    border: solid 1px #EB2222;
+    background-color: #EB2222;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.red:hover{
+    color:#EB2222;
+    background-color: #fff;
+    border: solid 1px #EB2222;
+}
+.white{
+    font-size: 1,5vw;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    color:#EB2222;
+    padding: 7px 20px;
+    border: solid 1px #EB2222;
+    background-color: #fff;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.white:hover{
+    color:#fff;
+    background-color: #EB2222;
+    /* border: solid 1px #EB2222; */
+}
+.header{
+    background-image: url(/image/burger-banner1-1.jpg);
+    width: 100%;
+    max-height: 100vh;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    aspect-ratio: 16/9;
+    background-color: rgba(0, 0, 0, 0.2); /* 半透明黑色 */
+}
+.header{
+    position: relative;
+}
+.content-banner{
+    position: absolute;
+    left:12%;
+    bottom: 40%;
+    z-index: 1;
+}
+.content-banner h1{
+    color: #fff;
+    font-size: 3.5vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 10px;
+}
+.content-banner h2{
+    color: #fff;
+    font-size: 3.5vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 10px;
+}
+.txt-content-banner{
+    display: none;
+}
+.content-banner a{
+    display: none;
+}
+.social{
+    display: none;
+}
+@media screen and (min-width:768px) {
+    .header{
+        position: relative;
+    }
+    .content-banner{
+        position: absolute;
+        left:12%;
+        bottom: 20%;
+        z-index: 1;
+    }
+    .txt-content-banner{
+        display: block;
+
+    }
+    .content-banner h1{
+        color: #fff;
+        font-size: 3.5vw;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin: 0 0 10px;
+    }
+    .content-banner h2{
+        color: #fff;
+        font-size: 3.5vw;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin: 0 0 10px;
+    }
+    .content-banner p{
+        color: #fff;
+        font-size: 1.5vw;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin: 5px 0 ;
+    }
+    .title-content-banner{
+        margin: 0 0 20px;
+    }
+    .txt-content-banner{
+        margin: 0 0 32px;
+        padding: 0 3px;
+    }
+    .content-banner a{
+        display: inline;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 7%;
+        bottom: 12%;
+    }
+    .fa-brands{
+        color: #fff;
+        font-size: 2vw;
+        margin: 10px 0;
+    }
+    
+}
+.content-header{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+
+}
+.txt-content-header{
+    margin: 0 0 30px;
+    font-size: 3vw;
+    line-height: 1.6;
+    font-weight: bold;
+}
+@media screen and (min-width:768px){
+    .content-header{
+        display: none;
+    }
+}
+.grid{
+    width: 100%;
+    display: flex;
+    background-color: #eee;
+}
+.longbox{
+    width: 10%;
+}
+.red-long{
+    width: 100%;
+    background-color: #eb2222;
+    padding-top: 25%;
+}
+.white-long{
+    width: 100%;
+    background-color: #fff;
+    padding-top: 25%;
+}
+.shortbox{
+    width:8%;
+}
+.red-short{
+    width: 100%;
+    background-color: #eb2222;
+    padding-top: 31.25%;
+}
+.white-short{
+    width: 100%;
+    background-color: #fff;
+    padding-top: 31.25%;
+}
+/* ----------menu---------- */
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 100px;
+}
+.container-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 6px hwb(0 0% 100% / 0.25);
+    padding: 0 30px;
+    position: relative;
+}
+.title{
+    font-weight: bold;
+    color: #000;
+    font-size: 24px;
+    margin: 50px 0 30px;
+    padding: 3px;
+    border-bottom:solid 2px #EB2222;
+}
+.type-menu{
+    margin: 0 0 30px;
+}
+.type-menu ul{
+    display: flex;
+    justify-content: center;
+
+}
+.type-menu ul li button{
+    border: none;
+    background-color: #fff;
+    color: #595959;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 8px;
+    border-bottom:solid 2px #eb222200;
+    padding: 0 0 5px;
+    transition: 0.1s;
+}
+.type-menu ul li button:hover{
+    border-bottom:solid 2px #EB2222;
+}
+.type-menu ul li button.active {
+    border-bottom: 2px solid #EB2222; /* 修改這裡的顏色和粗細 */
+}
+.txt-menu{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #EB2222;
+}
+.menu-content{
+    display: none;
+}
+.menu-content.active{
+    display: block;
+}
+.card-menu{
+    width: 300px;
+    height: 420px;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 6px hwb(0 0% 100% / 0.25);
+    margin: 30px auto;
+}
+.pic-card{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px 20px 0 0 ;
+    overflow: hidden;
+}
+.pic-card img{
+    width: 100%;
+    vertical-align: top;
+    transition: 0.5s;
+}
+.card-menu:hover .pic-card img{
+    scale: 1.1;
+}
+.txt-card{
+    letter-spacing: 2px;
+}
+.txt-card h4{
+    color: #595959;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+.txt-card p{
+    font-size: 16px;
+    color: #595959;
+    margin: 0 10px 10px;
+    line-height: 1.6;
+}
+.price-card{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.price-card button{
+    border: none;
+    background-color: #fff;
+}
+.fa-cart-shopping{
+    color: #EB2222;
+    scale: 2;
+    margin: 0 10px 0 0;
+    transition: 0.5s;
+}
+.fa-cart-shopping:hover{
+    scale: 2.2;
+}
+@media screen and (min-width:768px) {
+    .container-menu{
+        width: 100%;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .type-menu ul li button{
+        margin: 0 3vw;
+        font-size: 16px;
+    }
+    .card-menu{
+        width:200px;
+        height: auto;
+        margin: 20px; 
+    }
+    .pic-card{
+        width: 200px;
+        height: 150px;
+    }
+    .txt-card h4{
+        font-size: 20px;
+    }
+    .txt-card p{
+        font-size: 12px;
+    }
+    .price-card{
+        font-size: 20px;
+    }
+    .straightbox-red{
+        width: 15px;
+        height: 100px;
+        background-color: #EB2222;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .straightbox-red-long{
+        width: 15px;
+        height: 200px;
+        background-color: #EB2222;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+@media screen and (min-width:1000px){
+    .container-menu{
+        width: 75%;
+    }
+}
+.btn-menu{
+    margin: 20px 0 50px;
+}
+.btn-menu a{
+    font-size: 16px;
+}
+.cart{
+    position: fixed;
+    z-index: 1000;
+    right: 17px;
+    top: 100px;
+}
+.cart>.fa-cart-shopping{
+    margin: 0;
+    color: #EB2222;
+    font-size: 12px;
+}
+.cart>.fa-cart-shopping:hover{
+    color: #fff;
+}
