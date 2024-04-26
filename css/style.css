@@ -206,19 +206,19 @@ hr{
 .content-banner{
     position: absolute;
     left:12%;
-    bottom: 40%;
+    bottom: 30%;
     z-index: 1;
 }
 .content-banner h1{
     color: #fff;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     font-weight: bold;
     letter-spacing: 3px;
     margin: 0 0 10px;
 }
 .content-banner h2{
     color: #fff;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     font-weight: bold;
     letter-spacing: 3px;
     margin: 0 0 10px;
@@ -301,8 +301,8 @@ hr{
 
 }
 .txt-content-header{
-    margin: 0 0 30px;
-    font-size: 3vw;
+    margin: 0 0 50px;
+    font-size: 4vw;
     line-height: 1.6;
     font-weight: bold;
 }
