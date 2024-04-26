@@ -302,16 +302,17 @@ hr{
 }
 .title-content-header h2{
     color: #fff;
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: bold;
     letter-spacing: 3px;
-    margin: 0 0 20px;
+    /* margin: 0 0 20px; */
+    line-height: 1.6;
 }
 .txt-content-header{
-    margin: 0 0 40px;
-    font-size: 3vw;
+    margin: 20px 0 40px;
+    font-size: 3.5vw;
     line-height: 2;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-align: center;
 }
 @media screen and (min-width:768px){
