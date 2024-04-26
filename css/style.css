@@ -205,20 +205,20 @@ hr{
 }
 .content-banner{
     position: absolute;
-    left:12%;
+    left:10%;
     bottom: 30%;
     z-index: 1;
 }
 .content-banner h1{
     color: #fff;
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-weight: bold;
     letter-spacing: 3px;
     margin: 0 0 10px;
 }
 .content-banner h2{
     color: #fff;
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-weight: bold;
     letter-spacing: 3px;
     margin: 0 0 10px;
