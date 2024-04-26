@@ -301,10 +301,11 @@ hr{
 
 }
 .txt-content-header{
-    margin: 0 0 50px;
-    font-size: 4vw;
+    margin: 0 0 40px;
+    font-size: 3.5vw;
     line-height: 1.6;
     font-weight: bold;
+    text-align: center;
 }
 @media screen and (min-width:768px){
     .content-header{
