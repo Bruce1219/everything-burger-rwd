@@ -601,7 +601,12 @@ hr{
     padding: 0 500px;
 }
 .hidden-news{
-    display: none;
+    visibility: hidden;
+}
+@media screen and (min-width:768px) {
+    .hidden-news{
+        display: none;
+    }
 }
 .card-news{
     width: 250px;
