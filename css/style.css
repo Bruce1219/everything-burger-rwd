@@ -590,7 +590,7 @@ hr{
 
 }
 .scrolling-object-container::-webkit-scrollbar {
-    visibility: hidden; /*隱藏滾動條*/
+    display: none; /*隱藏滾動條*/
 }
 .scrolling-object {
     display: inline-block; /*內容以行內元素顯示*/
@@ -598,12 +598,15 @@ hr{
 }
 .newsstream{
     display: flex;
-    padding: 0 600px;
+    padding: 0 700px;
 }
 .hidden-news{
     visibility: hidden;
 }
 @media screen and (min-width:768px) {
+    .newsstream{
+        padding: 0 500px;
+    }
     .hidden-news{
         display: none;
     }
