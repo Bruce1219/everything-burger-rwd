@@ -557,3 +557,110 @@ hr{
 .cart>.fa-cart-shopping:hover{
     color: #fff;
 }
+/* --------------news------------- */
+.box-news{
+    width: 100%;
+    height: 700vh;
+}
+.container-news{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: #000; */
+    background-image: url(../image/bg2.jpg);
+    background-repeat: repeat;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+.scrolling-object-container {
+    overflow-x: scroll; /* 設置為水平滾動 */
+    overflow-y: hidden;  /*  隱藏垂直滾動條 */
+    /* white-space: nowrap; 防止內容折行 */
+    width: 100%;/*設置容器寬度*/
+    height: 500px;
+    /* background-color: #eee; */
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+}
+.scrolling-object-container::-webkit-scrollbar {
+    visibility: hidden; /*隱藏滾動條*/
+}
+.scrolling-object {
+    display: inline-block; /*內容以行內元素顯示*/
+    /* padding: 0 100px 0 0; */
+}
+.newsstream{
+    display: flex;
+    padding: 0 500px;
+}
+.hidden-news{
+    display: none;
+}
+.card-news{
+    width: 250px;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 6px hwb(0 0% 100% / 0.25);
+    margin: 0 50px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pic-news{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+
+}
+.pic-news img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    transition: 0.5s;
+}
+.card-news:hover{
+    scale:1.1
+}
+.card-news:hover img{
+    scale:1.2
+}
+.info-news{
+    letter-spacing: 2px;
+    color: #595959;
+    padding: 10px;
+}
+.date-news{
+    margin: 0 0 10px;
+    font-size: 12px;
+}
+.title-news{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+.txt-news{
+    font-size: 12px;
+    margin: 0 0 10px;
+    line-height: 1.6;
+
+}
+.btn-news{
+    margin: 10px 10px 20px;
+    font-size: 12px;
+}
+.btn-news a{
+    font-size: 12px;
+}
+.box{
+    width: 100%;
+    height: 200vh;
+    background-color: #eee;
+}
