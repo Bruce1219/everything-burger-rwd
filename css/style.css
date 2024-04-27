@@ -598,7 +598,7 @@ hr{
 }
 .newsstream{
     display: flex;
-    padding: 0 500px;
+    padding: 0 600px;
 }
 .hidden-news{
     visibility: hidden;
