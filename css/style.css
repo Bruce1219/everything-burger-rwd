@@ -598,17 +598,16 @@ hr{
 }
 .newsstream{
     display: flex;
-    padding: 0 700px;
-}
-.hidden-news{
-    visibility: hidden;
+    padding: 0 300px 0 1500px;
 }
 @media screen and (min-width:768px) {
     .newsstream{
-        padding: 0 500px;
+        padding: 0 300px 0 750px;
     }
-    .hidden-news{
-        display: none;
+}
+@media screen and (min-width:1200px) {
+    .newsstream{
+        padding: 0 300px 0 600px;
     }
 }
 .card-news{
