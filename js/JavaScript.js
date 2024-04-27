@@ -111,37 +111,24 @@ function showContent(category) {
 }
 
 //-------------滾動動畫------------//
-// const scrollingObject = document.querySelector('.scrolling-object');
-
-// window.addEventListener('scroll', function() {
-
-//     // 物件滚动
-//     const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-//     const containerWidth = document.querySelector('.scrolling-object-container').offsetWidth;
-//     const maxScroll = containerWidth - scrollingObject.offsetWidth;
-//     const scrollAmount = maxScroll * scrollPercentage * 0.5;
-//     scrollingObject.style.transform = 'translateX(' + scrollAmount + 'px)';
-
-
-// });
 
 const scrollingObject = document.querySelector('.scrolling-object');
 const scrollingObjectContainer = document.querySelector('.scrolling-object-container');
 
 
 window.addEventListener('scroll', function() {
-    // 获取滚动容器的宽度
+    // 容器寬度
     const containerWidth = document.querySelector('.scrolling-object-container').offsetWidth;
     const containerRect = scrollingObjectContainer.getBoundingClientRect();
 
 
-    // 物件滚动
+    // 物件滾動
     const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
     const maxScroll = containerWidth - scrollingObject.offsetWidth;
     const scrollAmount = maxScroll * scrollPercentage ;
 
-    // 如果滚动到一定位置，才开始横向滚动
-    if (containerRect.bottom <= window.innerHeight) { // 这里可以调整滚动开始的位置
+    //視窗出現才滾動
+    if (containerRect.bottom <= window.innerHeight) { 
         scrollingObject.style.transform = 'translateX(' + scrollAmount + 'px)';
     }
 });
