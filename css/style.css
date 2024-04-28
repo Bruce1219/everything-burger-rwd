@@ -600,17 +600,17 @@ hr{
 }
 .newsstream{
     display: flex;
-    padding: 0 100px 0 1000px;
+    padding: 0 300px 0 1000px;
     align-items: center;
 }
 @media screen and (min-width:768px) {
     .newsstream{
-        padding: 0 100px 0 750px;
+        padding: 0 300px 0 750px;
     }
 }
 @media screen and (min-width:1200px) {
     .newsstream{
-        padding: 0 100px 0 500px;
+        padding: 0 300px 0 500px;
     }
 }
 .card-news{
