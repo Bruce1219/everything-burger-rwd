@@ -385,12 +385,23 @@ hr{
     font-weight: bold;
     color: #000;
     font-size: 30px;
-    margin: 50px 0 30px;
+    margin: 30px 0;
     padding: 3px;
     border-bottom:solid 2px #EB2222;
 }
+.title-sticky{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9997;
+    background-color: #fff;
+    border-bottom:solid 1px #eee ;
+}
 .type-menu{
-    margin: 0 0 30px;
+    margin: 0 0 10px;
 }
 .type-menu ul{
     display: flex;
@@ -420,6 +431,7 @@ hr{
     font-weight: bold;
     letter-spacing: 1px;
     color: #EB2222;
+    margin: 20px 0 0;
 }
 .menu-content{
     display: none;
