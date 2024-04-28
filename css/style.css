@@ -426,8 +426,8 @@ hr{
 }
 .menu-content.active{
     width: 100%;
-    display: flex;
-    overflow:hidden;
+    display: block;
+    /* overflow:hidden; */
 }
 .container{
     overflow-x: scroll;
@@ -443,7 +443,8 @@ hr{
     border: solid 1px #fff;
     border-radius: 20px;
     box-shadow: 0 0 6px hwb(0 0% 100% / 0.25);
-    margin: 30px 50px 30px 30px;
+    /* margin: 30px 50px 30px 30px; */
+    margin: 30px auto;
 }
 .pic-card{
     width: 300px;
@@ -688,7 +689,7 @@ hr{
 
 }
 .button-news{
-    margin: 0 300px 0 30px;
+    margin: 0 100px 0 30px;
     font-size: 16px;
 }
 .box{
