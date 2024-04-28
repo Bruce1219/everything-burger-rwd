@@ -496,6 +496,14 @@ hr{
 .fa-cart-shopping:hover{
     scale: 2.2;
 }
+
+.switch-span span{
+    color: #595959;
+    width: 50px;
+    height: 3px;
+    margin: 5px;
+    display: block;
+}
 @media screen and (min-width:768px) {
     .container-menu{
         width: 100%;

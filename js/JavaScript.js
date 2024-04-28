@@ -111,29 +111,30 @@ function showContent(category) {
 }
 
 //--------------menu-rwd----------//
+let container = document.querySelector('.container');
+let cols = document.querySelectorAll('.col');
+let colWidth = cols[0].offsetWidth + 10; // 考慮到間距
+let currentIndex = 0;
 
-let isMouseDown = false;
-        let startX, currentX;
+document.querySelector('.container').addEventListener('mousedown', function(event) {
+    let targetX = event.clientX - container.getBoundingClientRect().left;
+    if (targetX < colWidth && currentIndex > 0) {
+        currentIndex--;
+        moveContainer(currentIndex);
+    } else if (targetX > container.offsetWidth - colWidth && currentIndex < cols.length - 1) {
+        currentIndex++;
+        moveContainer(currentIndex);
+    }
+});
 
-        document.querySelector('.container').addEventListener('mousedown', function(event) {
-            if (!isMouseDown) {
-                isMouseDown = true;
-                startX = event.clientX - this.scrollLeft;
-                this.style.cursor = 'grabbing';
-            }
-        });
+function moveContainer(index) {
+    container.scrollTo({
+        left: index * colWidth,
+        behavior: 'smooth'
+    });
+}
 
-        document.addEventListener('mouseup', function() {
-            isMouseDown = false;
-            document.querySelector('.container').style.cursor = 'grab';
-        });
 
-        document.addEventListener('mousemove', function(event) {
-            if (isMouseDown) {
-                currentX = event.clientX - startX;
-                document.querySelector('.container').scrollLeft = -currentX;
-            }
-        });
 
 //-------------滾動動畫------------//
 
