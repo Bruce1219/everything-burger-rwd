@@ -713,7 +713,7 @@ hr{
     vertical-align: top;
 }
 .txt-about{
-    width: 50%;
+    width: 60%;
     letter-spacing: 2px;
     color: #595959;
     padding: 30px;
@@ -721,10 +721,10 @@ hr{
     background-color: rgba(255, 255, 255, 0.9);
 }
 .title-txt{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     color: #EB2222;
-    margin: 0px 5px 10px;
+    margin: 0px 5px 15px;
     display: inline-block;
 }
 .titlewrap-about{
@@ -740,6 +740,7 @@ hr{
     display: inline-block;
     writing-mode: vertical-rl; 
     text-orientation: mixed;
+    margin: 0 10px 0 0;
 }
 .hashtag-about{
     color: #EB2222;
@@ -754,7 +755,7 @@ hr{
     line-height: 1.6;
     display: inline-block;
     border-left: #EB2222 solid 3px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .btn-about{
     font-size: 16px;
