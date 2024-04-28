@@ -867,6 +867,7 @@ hr{
     align-items:flex-start ;
     justify-content: center;
     /* padding: 0 20px; */
+    margin: 30px 0;
 }
 .info-location i{
     color: #EB2222;
@@ -901,6 +902,9 @@ hr{
         justify-content: center;
         align-items:flex-start;
         margin: 50px 0;
+    }
+    .info-location{
+        margin: 0;
     }
     .map iframe{
         width: 300px;
@@ -986,14 +990,17 @@ hr{
     margin: 10px;
     color: #fff;
 }
+.footer hr{
+    color: #fff;
+}
 .txt-footer{
-    padding: 20px;
+    padding: 10px 20px 50px;
 }
 .txt-footer p{
     color: #fff;
     font-size: 12px;
     letter-spacing: 2px;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 .txt-footer i{
     color: #fff;
@@ -1007,4 +1014,41 @@ hr{
 .right-footer{
     margin: 10px;
 
+}
+@media screen and (min-width:768px){
+    .info-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media screen and (min-width:1000px){
+    .list-footer{
+        height: 150px;
+        flex-wrap: wrap;
+    }
+}
+
+.topbtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-weight: bold;
+    font-size: 16px;
+    border: solid 1px #EB2222;
+    outline: none;
+    background-color: #fff;
+    color: #EB2222;
+    cursor: pointer;
+    padding: 7px 20PX;
+    border-radius: 99px;
+    transition: 0.5s;
+    text-align: center;
+}
+.topbtn:hover {
+    background-color: #EB2222;
+    color: #fff;
+    border: solid 1px #fff;
 }

@@ -128,10 +128,39 @@ window.addEventListener('scroll', function() {
     const scrollAmount = maxScroll * scrollPercentage ;
 
     //視窗出現才滾動
-    if (containerRect.bottom <= window.innerHeight) { 
+    if (containerRect.bottom * 0.8 <= window.innerHeight) { 
         scrollingObject.style.transform = 'translateX(' + scrollAmount + 'px)';
     }
 });
+
+
+//------------------topBtn----------------//
+
+window.onscroll = function() {
+    scrollFunction();
+};
+    
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("scrollToTopBtn").style.display = "none";
+        }
+    }
+    
+// When the user clicks on the button, scroll to the top of the document with smooth animation
+function scrollToTop() {
+    const scrollDuration = 500; // Duration of the scroll animation in milliseconds
+    
+    const scrollStep = -window.scrollY / (scrollDuration / 15);
+    const scrollInterval = setInterval(function(){
+        if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+        } else {
+            clearInterval(scrollInterval);
+        }
+    },15);
+}
 
 
 
