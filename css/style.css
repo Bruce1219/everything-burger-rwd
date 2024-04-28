@@ -709,10 +709,10 @@ hr{
     background-color: rgba(255, 255, 255, 0.9);
 }
 .title-txt{
-    font-size: 24px;
+    font-size: 26px;  /*24px可*/
     font-weight: bold;
     color: #EB2222;
-    margin: 0px 5px 15px;
+    margin: 15px 5px 5px;
     display: inline-block;
 }
 .titlewrap-about{
