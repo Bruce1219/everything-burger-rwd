@@ -721,7 +721,7 @@ hr{
     background-color: rgba(255, 255, 255, 0.9);
 }
 .title-txt{
-    font-size: 28px;
+    font-size: 4.5vw;
     font-weight: bold;
     color: #EB2222;
     margin: 0px 5px 15px;
@@ -766,6 +766,9 @@ hr{
 @media screen and (min-width:768px) {
     .txt-about{
         margin: 0;
+    }
+    .title-txt{
+        font-size: 30px;
     }
     .pic-about{
         display: none;
