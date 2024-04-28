@@ -110,6 +110,31 @@ function showContent(category) {
     selectedButton.classList.add('active');
 }
 
+//--------------menu-rwd----------//
+
+let isMouseDown = false;
+        let startX, currentX;
+
+        document.querySelector('.container').addEventListener('mousedown', function(event) {
+            if (!isMouseDown) {
+                isMouseDown = true;
+                startX = event.clientX - this.scrollLeft;
+                this.style.cursor = 'grabbing';
+            }
+        });
+
+        document.addEventListener('mouseup', function() {
+            isMouseDown = false;
+            document.querySelector('.container').style.cursor = 'grab';
+        });
+
+        document.addEventListener('mousemove', function(event) {
+            if (isMouseDown) {
+                currentX = event.clientX - startX;
+                document.querySelector('.container').scrollLeft = -currentX;
+            }
+        });
+
 //-------------滾動動畫------------//
 
 const scrollingObject = document.querySelector('.scrolling-object');

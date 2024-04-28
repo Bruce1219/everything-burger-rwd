@@ -425,7 +425,17 @@ hr{
     display: none;
 }
 .menu-content.active{
-    display: block;
+    width: 100%;
+    display: flex;
+    overflow:hidden;
+}
+.container{
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+.container::-webkit-scrollbar { /* WebKit */
+    display: none;
 }
 .card-menu{
     width: 300px;
@@ -433,7 +443,7 @@ hr{
     border: solid 1px #fff;
     border-radius: 20px;
     box-shadow: 0 0 6px hwb(0 0% 100% / 0.25);
-    margin: 30px auto;
+    margin: 30px 50px;
 }
 .pic-card{
     width: 300px;
@@ -496,6 +506,10 @@ hr{
     .type-menu ul li button{
         margin: 0 3vw;
         font-size: 16px;
+    }
+    .menu-content.active{
+        display: flex;
+        justify-content: center;
     }
     .card-menu{
         width:200px;
