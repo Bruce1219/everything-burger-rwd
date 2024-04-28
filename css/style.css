@@ -681,29 +681,17 @@ hr{
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    /* height: 100vh; */
 }
 .title-about{
     margin: 0 0 30px;
 }
 .content-about{
     width: 100%;
-    /* border: solid 1px black; */
-
     position: relative;
 }
 .wrap-about{
     width: 100%;
-    /* display: flex; */
-    /* background-color:#EEEEEE; */
-    /* border-radius: 20px; */
-    /* margin: 20px 0; */
-    /* z-index: 100; */
-    /* position: relative; */
-    /* box-shadow:15px -15px #EB2222; */
-    /* transition: 0.5s; */
     position: relative;
-    
 }
 .pic-about{
     width: 100%;
@@ -755,7 +743,7 @@ hr{
     line-height: 1.6;
     display: inline-block;
     border-left: #EB2222 solid 3px;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
 }
 .btn-about{
     font-size: 16px;
@@ -782,13 +770,13 @@ hr{
         justify-content: center;
     }
     .content-about{
-        background-image: url(../image/burger-banner3.jpg);
-        width: 100%;
-        max-height: 100vh;
-        aspect-ratio: 16/9;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+            background-image: url(../image/burger-banner3.jpg);
+            width: 100%;
+            max-height: 100vh;
+            aspect-ratio: 16/9;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
 
     }
 }
@@ -812,4 +800,34 @@ hr{
 
     }
 
+}
+
+/* --------location--------- */
+
+.location{
+    background-image: url(../image/location.jpg);
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.location::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+.content-location{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 100vh;
+    aspect-ratio: 16/9;
 }
