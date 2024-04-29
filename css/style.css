@@ -129,7 +129,7 @@ a{
     color: #EB2222;
     font-size: 35px;
 }
-hr{
+.hidden-nav hr{
     width: 90%;
     color: #595959;
     margin: 5px auto;
