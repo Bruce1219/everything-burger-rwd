@@ -603,8 +603,10 @@ hr{
 }
 
 /* --------------news------------- */
-.maintitle-news{
-    margin: 30px 0 0;
+@media screen and (min-width:375px){
+    .maintitle-news{
+        margin: 30px 0 0;
+    }
 }
 .box-news{
     width: 100%;
