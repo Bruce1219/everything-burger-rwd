@@ -1043,6 +1043,8 @@ a{
 }
 .footer hr{
     color: #fff;
+    width: 90%;
+    margin: auto;
 }
 .txt-footer{
     padding: 10px 20px 50px;
