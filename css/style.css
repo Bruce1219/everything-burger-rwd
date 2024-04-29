@@ -650,7 +650,7 @@ hr{
 }
 .newsstream{
     display: flex;
-    padding: 0 500px 0 1000px;
+    padding: 0 600px 0 1000px;
     align-items: center;
 }
 @media screen and (min-width:768px) {
