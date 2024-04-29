@@ -603,11 +603,14 @@ hr{
 }
 
 /* --------------news------------- */
-
-.box-news{
-    width: 100%;
-    height: 700vh;
+@media screen and (min-width:768px) {
+    .box-news{
+        width: 100%;
+        height: 700vh;
+    }
+    /* 手機版拿掉上下QQ */
 }
+
 .container-news{
     width: 100%;
     height: 113vh;/*110px可*/
