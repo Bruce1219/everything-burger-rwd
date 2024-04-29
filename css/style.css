@@ -918,6 +918,13 @@ a{
     letter-spacing: 3px;
     line-height: 1.6;
 }
+.info-location a{
+    color: #fff;
+    font-size: 16px;
+    /* font-weight: bold; */
+    letter-spacing: 3px;
+    line-height: 1.6;
+}
 .item-location{
     display: flex;
     margin: 15px 0 ;
@@ -986,6 +993,13 @@ a{
         letter-spacing: 3px;
         line-height: 1.6;
     }
+    .info-location a{
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        line-height: 1.6;
+    }
 }
 
 /* ----------footer----------- */
@@ -1032,6 +1046,12 @@ a{
 }
 .txt-footer{
     padding: 10px 20px 50px;
+}
+.txt-footer a{
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1.2;
 }
 .txt-footer p{
     color: #fff;
