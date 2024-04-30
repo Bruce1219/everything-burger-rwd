@@ -1108,9 +1108,9 @@ a{
 .topbtn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
-    z-index: 99;
+    z-index: 9998;
     font-weight: bold;
     font-size: 16px;
     border: solid 1px #EB2222;

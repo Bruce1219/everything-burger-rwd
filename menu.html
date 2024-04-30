@@ -93,12 +93,207 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </header>
+    <div class="grid">
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+    </div>
     <section class="menu">
         <div class="mainbtn-menu">
-            <button class="red" id="classicBtn">經典菜單</button>
-            <button class="white" id="selfBtn">自己搭配!</button>
+            <button class="red" id="classicBtn">自己搭配</button>
+            <button class="white" id="selfBtn">經典菜單</button>
         </div>
-        <div class="container-menu">
+        <div class="container-selfmenu " id="container1">
+            <div class="self-container-menu">
+                <div class="self-type-menu">
+                    <ul>
+                        <li>
+                            <button id="breadBtn" onclick="showSelfContent('bread')">麵包</button>
+                        </li>
+                        <li>
+                            <button id="meatBtn" onclick="showSelfContent('meat')">肉料</button>
+                        </li>
+                        <li>
+                            <button id="veggieBtn" onclick="showSelfContent('veggie')">蔬菜</button>
+                        </li>
+                        <li>
+                            <button id="toppingBtn" onclick="showSelfContent('topping')">配料</button>
+                        </li>
+                        <li>
+                            <button id="sauceBtn" onclick="showSelfContent('sauce')">醬料</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="self-content active" id="breadPage">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-3">
+                            <div class="col">
+                                <button class="self-wrap">
+                                    <div class="self-card">
+                                        <div class="self-pic-menu">
+                                            <img src="image/bread1.png" alt="bread1">
+                                        </div>
+                                        <div class="self-txt-card">
+                                            <h4>經典麵包</h4>
+                                            <p>NT$ 20</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="self-wrap">
+                                    <div class="self-card">
+                                        <div class="self-pic-menu">
+                                            <img src="image/bread2-2.png" alt="bread1">
+                                        </div>
+                                        <div class="self-txt-card">
+                                            <h4>芝麻麵包</h4>
+                                            <p>NT$ 25</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="self-wrap">
+                                    <div class="self-card">
+                                        <div class="self-pic-menu">
+                                            <img src="image/bread3.png" alt="bread1">
+                                        </div>
+                                        <div class="self-txt-card">
+                                            <h4>馬芬麵包</h4>
+                                            <p>NT$ 30</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="self-wrap">
+                                    <div class="self-card">
+                                        <div class="self-pic-menu">
+                                            <img src="image/bread4.png" alt="bread1">
+                                        </div>
+                                        <div class="self-txt-card">
+                                            <h4>丹麥麵包</h4>
+                                            <p>NT$ 35</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="self-wrap">
+                                    <div class="self-card">
+                                        <div class="self-pic-menu">
+                                            <img src="image/bread5.png" alt="bread1">
+                                        </div>
+                                        <div class="self-txt-card">
+                                            <h4>雜糧麵包</h4>
+                                            <p>NT$ 35</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button class="self-wrap">
+                                    <div class="self-card">
+                                        <div class="self-pic-menu">
+                                            <img src="image/bread6.png" alt="bread1">
+                                        </div>
+                                        <div class="self-txt-card">
+                                            <h4>生菜</h4>
+                                            <p>NT$ 20</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="self-content" id="meatPage">
+                </div>
+                <div class="self-content" id="veggiePage">
+                </div>
+                <div class="self-content" id="toppingPage">
+                </div>
+                <div class="self-content" id="saucePage">
+                </div>
+            </div>
+            <div class="self-box-wrap">
+                <div class="self-box">
+                    <h3 class="title">您的漢堡</h3>
+                    <div class="choice-self">
+                        <p class="item-choice">經典麵包</p>
+                        <p class="item-choice">芝麻麵包</p>
+                        <p class="item-choice">馬芬麵包</p>
+                        <p class="item-choice">丹麥麵包</p>
+                        <p class="item-choice">生菜</p>
+                        <p class="item-choice">4oz牛肉餅</p>
+                        <p class="item-choice">生菜</p>
+                        <p class="item-choice">番茄醬</p>
+                    </div>
+                    <div class="price-self">
+                        <span>NT$</span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="self-info">
+                <button class="red">加入購物車</button>
+            </div>
+        </div>
+        <div class="container-menu hidden" id="container2">
             <div class="title-sticky">
                 <div class="title title-menu">
                     <h2>MENU</h2>
@@ -613,8 +808,108 @@
             <div class="straightbox-red"></div>
             <div class="straightbox-red-long"></div>
         </div>
-    </section>
 
+    </section>
+    <div class="grid">
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+        <div class="shortbox">
+            <div class="white-short"></div>
+            <div class="red-short"></div>
+            <div class="white-short"></div>
+        </div>
+        <div class="longbox">
+            <div class="red-long"></div>
+            <div class="white-long"></div>
+            <div class="red-long"></div>
+        </div>
+    </div>
+    <!-- <footer class="footer">
+        <div class="info-footer">
+            <div class="list-footer">
+                <a href="menu.html" class="item-footer">MENU</a>
+                <a href="news.html" class="item-footer">NEWS</a>
+                <a href="location.html" class="item-footer">LOCATION</a>
+                <a href="about.html" class="item-footer">ABOUT</a>
+                <a href="contact.html" class="item-footer">CONTACT</a>
+            </div>
+            <div class="logo-footer">
+                <div class="logo-wrap">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="image/logo2.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="social-footer">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-threads"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="txt-footer">
+            <div class="contact-footer">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+886-3-425-1108">03-425-1108</a>
+            </div>
+            <div class="contact-footer">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://maps.app.goo.gl/WcYc2ZUXTdnvDQSc6" target="_blank">320桃園市中壢區復興路46號</a>
+            </div>
+            <div class="right-footer">
+                <p>@copyright©2024 EVERYTHING BURGER CO . All rights reserved. </p>
+            </div>
+        </div>
+    </footer> -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" class="topbtn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
     <script src="./js/JavaScript.js"></script>
 
 </body>
