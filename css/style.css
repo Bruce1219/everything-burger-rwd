@@ -172,6 +172,7 @@ a{
     background-color: #EB2222;
     border-radius: 100px;
     transition: 0.5s;
+    cursor: pointer;
 }
 .red:hover{
     color:#EB2222;
@@ -179,7 +180,7 @@ a{
     border: solid 1px #EB2222;
 }
 .white{
-    font-size: 1,5vw;
+    font-size: 1.5vw;
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: bolder;
@@ -189,6 +190,8 @@ a{
     background-color: #fff;
     border-radius: 100px;
     transition: 0.5s;
+    cursor: pointer;
+
 }
 .white:hover{
     color:#fff;
