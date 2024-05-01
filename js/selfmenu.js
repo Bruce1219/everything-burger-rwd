@@ -161,6 +161,7 @@ let beefX = document.getElementById("beefX");
 function showBeef(){
     if (!beef.classList.contains('active')) {
         beef.classList.add('active');
+        meatX.classList.remove('active');
         num = num + 80;
         selfPrice.textContent = sum + num;
     }
@@ -180,6 +181,7 @@ let chickenX = document.getElementById("chickenX");
 function showChicken(){
     if (!chicken.classList.contains('active')) {
         chicken.classList.add('active');
+        meatX.classList.remove('active');
         num = num + 80;
         selfPrice.textContent = sum + num;
     }
@@ -199,6 +201,7 @@ let baconX = document.getElementById("baconX");
 function showBacon(){
     if (!bacon.classList.contains('active')) {
         bacon.classList.add('active');
+        meatX.classList.remove('active');
         num = num + 60;
         selfPrice.textContent = sum + num;
     }
@@ -218,6 +221,7 @@ let porkX = document.getElementById("porkX");
 function showPork(){
     if (!pork.classList.contains('active')) {
         pork.classList.add('active');
+        meatX.classList.remove('active');
         num = num + 80;
         selfPrice.textContent = sum + num;
     }
@@ -237,6 +241,7 @@ let hamX = document.getElementById("hamX");
 function showHam(){
     if (!ham.classList.contains('active')) {
         ham.classList.add('active');
+        meatX.classList.remove('active');
         num = num + 60;
         selfPrice.textContent = sum + num;
     }
@@ -248,3 +253,24 @@ function closeHam(){
 }
 hamBtn.onclick = showHam;
 hamX.onclick = closeHam;
+
+//meatX
+let meatXBtn = document.getElementById("meatXBtn");
+let meatX = document.getElementById("meatX");
+let meatXX = document.getElementById("meatXX");
+function showMeatX(){
+    meatX.classList.add('active');
+    beef.classList.remove('active');
+    chicken.classList.remove('active');
+    bacon.classList.remove('active');
+    pork.classList.remove('active');
+    ham.classList.remove('active');
+    num = 0;
+    selfPrice.textContent = sum + num;
+}
+function closeMeatX(){
+    meatX.classList.remove('active');
+    selfPrice.textContent = sum + num;
+}
+meatXBtn.onclick = showMeatX;
+meatXX.onclick = closeMeatX;
