@@ -108,6 +108,7 @@
     bottom: 0;
     width: 100%;
     border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
     background-color: #fff;
     padding: 10px 0;
 }
@@ -149,10 +150,10 @@
     border: none;
     background-color: #fff;
     color: #595959;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 0 20px;
+    margin: 0 15px;
     border-bottom:solid 2px #eb222200;
     padding: 0 0 5px;
     transition: 0.1s;

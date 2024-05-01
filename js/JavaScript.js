@@ -189,6 +189,37 @@ function scrollToTop() {
 }
 
 
+//------------------mainmenubtn--------------------//
+
+let classicBtn = document.getElementById("classicBtn");
+let selfBtn = document.getElementById("selfBtn");
+let containerSelf = document.getElementById("containerSelf");
+let containerClassic = document.getElementById("containerClassic");
+
+
+function showself(){
+    containerSelf.classList.remove('hidden')
+    containerClassic.classList.add('hidden');
+    selfBtn.classList.add('red');
+    selfBtn.classList.remove('white');
+    classicBtn.classList.add('white');
+    classicBtn.classList.remove('red');
+}
+
+function showClassic(){
+    containerSelf.classList.add('hidden')
+    containerClassic.classList.remove('hidden');
+    selfBtn.classList.add('white');
+    selfBtn.classList.remove('red');
+    classicBtn.classList.add('red');
+    classicBtn.classList.remove('white');
+}
+
+selfBtn.onclick = showself;
+classicBtn.onclick = showClassic;
+
+
+
 
 
 
