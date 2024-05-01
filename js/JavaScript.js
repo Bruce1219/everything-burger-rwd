@@ -218,6 +218,35 @@ function showClassic(){
 selfBtn.onclick = showself;
 classicBtn.onclick = showClassic;
 
+//-----------------self-menu-------------//
+
+function showSelfContent(category) {
+    // 檢查要顯示的內容是否已經是活動狀態
+    var selectedContent = document.getElementById(category + 'Page');
+    if (selectedContent.classList.contains('active')) {
+        return; // 如果是，則不執行任何操作
+    }
+
+    // 隱藏所有內容
+    var contents = document.querySelectorAll('.self-content');
+    contents.forEach(function(content) {
+        content.classList.remove('active');
+    });
+
+    // 取消所有按鈕的活動狀態
+    var buttons = document.querySelectorAll('button');
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+
+    // 顯示特定類別的內容
+    selectedContent.classList.add('active');
+
+    // 標記被點擊的按鈕為活動狀態
+    var selectedButton = document.getElementById(category + 'Btn');
+    selectedButton.classList.add('active');
+}
+
 
 
 

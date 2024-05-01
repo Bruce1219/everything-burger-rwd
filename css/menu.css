@@ -164,6 +164,12 @@
 .self-type-menu ul li button.active {
     border-bottom: 2px solid #EB2222; /* 修改這裡的顏色和粗細 */
 }
+.self-content{
+    display: none;
+}
+.active{
+    display: block;
+}
 .self-wrap{
     border: none;
     background-color: #fff;
@@ -229,3 +235,30 @@
 .self-txt-card:hover.self-txt-card p{
     color: #fff;
 }
+.no-self-menu{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.self-x{
+    display: block;
+    /* font-size: 30px; */
+    scale: 3;
+    transition: 0.5s;
+}
+.no-self-txt-card{
+    height: 93.59px;
+    background-color: #eee;
+    border: solid 1px #eee;
+    border-radius: 0 0 20px 20px;
+    transition: 0.5s;
+}
+.self-card:hover .self-x{
+    scale: 4;
+}
+.self-card:hover .no-self-txt-card{
+    background-color: #EB2222;
+}
+
+
