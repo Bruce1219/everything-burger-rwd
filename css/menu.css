@@ -88,6 +88,7 @@
     margin: 5px;
 }
 .choice-self{
+    width: 100%;
     min-height: 70px;
     max-height: 200px;
     text-align: center;
