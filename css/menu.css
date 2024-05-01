@@ -72,34 +72,50 @@
 .self-box-wrap{
     position: sticky;
     bottom: 51px;
-    z-index: 9997;
+    z-index: 9998;
 }
 .self-box{
     width: 100%;
-    background-color: hsla(0, 0%, 93%);
+    backdrop-filter: blur(8px);
+    background-color: hsla(0, 0%, 93%, 0.75);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .self-box h3{
-    font-size: 20px;
-    margin: 10px;
+    font-size: 16px;
+    margin: 5px;
 }
 .choice-self{
-    min-height: 50px;
+    min-height: 70px;
     text-align: center;
+    display: flex;
+}
+.choice-list{
+    margin: 0 5px;
+    text-align: left;
 }
 .item-choice{
-    font-size: 12px;
     line-height: 1.6;
-    display: none;
-    
+    color: #595959;
+    cursor:default;
+    font-size: 14px;
+    /* display: none; */ 
+}
+.item-choice span{
+    display: inline-block;
+
+}
+.item-choice button{
+    border: none; 
+    background-color:transparent;
+}
+.x-choice{
+    font-size: 12px;
+    cursor: pointer;
 }
 .price-self{
     padding: 10px;
-}
-.self-box span{
-    font-size: 16px;
 }
 .self-info{
     display: flex;
@@ -114,6 +130,7 @@
 }
 .self-info button{
     font-size: 12px;
+    padding: 7px 50px;
 }
 
 .self-container-menu{
@@ -130,7 +147,7 @@
 }
 .self-type-menu{
     margin: 0 0 20px;
-    padding: 60px 0 10px;
+    padding: 70px 0 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
