@@ -90,7 +90,7 @@
 .choice-self{
     width: 100%;
     min-height: 120px;
-    max-height: 220px;
+    max-height: 300px;
     margin: auto;  /*置中?*/
     text-align: center;
     display: flex;
@@ -366,22 +366,10 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    .choice-list{
-        margin: 0 5px;
-        text-align: center;
-    }
     .item-choice{
         margin:3px;
     }
     .item-choice span{
-        display: inline-block;
-    }
-    .item-choice button{
-        border: none; 
-        background-color:transparent;
-    }
-    .x-choice{
-        font-size: 16px;
-        cursor: pointer;
+        margin: 0 10px;
     }
 }
