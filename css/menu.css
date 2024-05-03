@@ -71,7 +71,7 @@
 }
 .self-box-wrap{
     position: sticky;
-    bottom: 51px;
+    bottom: 0;
     z-index: 9997;
 }
 .self-box{
@@ -90,7 +90,7 @@
 .choice-self{
     width: 100%;
     min-height: 120px;
-    max-height: 200px;
+    max-height: 220px;
     margin: auto;  /*置中?*/
     text-align: center;
     display: flex;
@@ -100,8 +100,7 @@
 }
 .choice-list{
     margin: 0 5px;
-    text-align: left;
-    text-align: left;
+    text-align: center;
 }
 .item-choice{
     line-height: 1.6;
@@ -112,7 +111,6 @@
 }
 .item-choice span{
     display: inline-block;
-
 }
 .item-choice button{
     border: none; 
@@ -129,11 +127,9 @@
 .self-info{
     display: flex;
     justify-content: center;
-    position: sticky;
-    bottom: 0;
     width: 100%;
     border-top: solid 1px #eee;
-    border-bottom: solid 1px #eee;
+    /* border-bottom: solid 1px #eee; */
     background-color: #fff;
     padding: 10px 0;
 }
@@ -208,6 +204,7 @@
     border-radius: 20px;
     box-shadow: 0 0 6px hwb(0 0% 100% / 0.25);
     margin: 10px auto;
+    cursor: pointer;
 
 }
 .self-pic-menu{
@@ -298,4 +295,93 @@
 .self-card:hover .no-self-txt-card h4{
     color: #fff;
 }
-
+@media screen and (min-width:1000px) {
+    .wrap-selfmenu{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    .self-container-menu{
+        width: 50%;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .self-type-menu{
+        padding: 50px 0 10px;
+    }
+    .self-type-menu ul li button{
+        font-size: 16px;
+        margin: 0 25px;
+    }
+    .self-card{
+        width: 150px;
+    }
+    .self-pic-menu{
+        width: 150px;
+        height: 120px;
+    }
+    .self-pic-menu img{
+        width: 100%;
+    }
+    .no-self-menu{
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .self-x{
+        display: block;
+        /* font-size: 30px; */
+        scale: 3;
+        transition: 0.5s;
+    }
+    .no-self-txt-card{
+        height: 93.59px;
+        background-color: #eee;
+        border: solid 1px #eee;
+        border-radius: 0 0 20px 20px;
+        transition: 0.5s;
+    }
+    .self-box-wrap{
+        position: sticky;
+        top: 0;
+        height: auto;
+        z-index: 9997;
+    }
+    .self-box{
+        margin: 30px 0;
+    }
+    .self-box h3{
+        font-size: 20px;
+        margin: 10px auto;
+    }
+    .choice-self{
+        width: 300px;   
+        min-height: 400px;
+        max-height: 600px;
+        margin: auto;  /*置中?*/
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .choice-list{
+        margin: 0 5px;
+        text-align: center;
+    }
+    .item-choice{
+        margin:3px;
+    }
+    .item-choice span{
+        display: inline-block;
+    }
+    .item-choice button{
+        border: none; 
+        background-color:transparent;
+    }
+    .x-choice{
+        font-size: 16px;
+        cursor: pointer;
+    }
+}

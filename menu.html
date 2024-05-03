@@ -155,613 +155,617 @@
             <button class="red" id="selfBtn">自己搭配</button>
             <button class="white" id="classicBtn">經典菜單</button>
         </div>
-        <div class="container-selfmenu " id="containerSelf">
-            <div class="self-container-menu">
-                <div class="self-type-menu">
-                    <ul>
-                        <li>
-                            <button id="breadBtn" onclick="showSelfContent('bread')" class="active">麵包</button>
-                        </li>
-                        <li>
-                            <button id="meatBtn" onclick="showSelfContent('meat')">肉料</button>
-                        </li>
-                        <li>
-                            <button id="veggieBtn" onclick="showSelfContent('veggie')">蔬菜</button>
-                        </li>
-                        <li>
-                            <button id="toppingBtn" onclick="showSelfContent('topping')">配料</button>
-                        </li>
-                        <li>
-                            <button id="sauceBtn" onclick="showSelfContent('sauce')">醬料</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="self-content  active" id="breadPage">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-md-3">
-                            <div class="col">
-                                <button class="self-wrap" id="classicBreadBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/bread1.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>經典麵包</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="sesameBreadBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/bread2-2.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>芝麻麵包</h4>
-                                            <p>NT$ 25</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="muffinBreadBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/bread3.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>馬芬麵包</h4>
-                                            <p>NT$ 30</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="denmarkBreadBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/bread4.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>丹麥麵包</h4>
-                                            <p>NT$ 35</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="grainsBreadBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/bread5.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>雜糧麵包</h4>
-                                            <p>NT$ 35</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="lettuceBreadBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/bread6.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>生菜</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            
-                        </div>
+        <div class="container-selfmenu" id="containerSelf">
+            <div class="wrap-selfmenu">
+                <div class="self-container-menu">
+                    <div class="self-type-menu">
+                        <ul>
+                            <li>
+                                <button id="breadBtn" onclick="showSelfContent('bread')" class="active">麵包</button>
+                            </li>
+                            <li>
+                                <button id="meatBtn" onclick="showSelfContent('meat')">肉料</button>
+                            </li>
+                            <li>
+                                <button id="veggieBtn" onclick="showSelfContent('veggie')">蔬菜</button>
+                            </li>
+                            <li>
+                                <button id="toppingBtn" onclick="showSelfContent('topping')">配料</button>
+                            </li>
+                            <li>
+                                <button id="sauceBtn" onclick="showSelfContent('sauce')">醬料</button>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="self-content" id="meatPage">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-md-3">
-                            <div class="col">
-                                <button class="self-wrap" id="beefBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/meat1-1.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>4oz牛肉餅</h4>
-                                            <p>NT$ 80</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="chickenBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/meat2.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>南方炸雞</h4>
-                                            <p>NT$ 80</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="baconBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/meat3.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>脆培根</h4>
-                                            <p>NT$ 60</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="porkBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/meat4.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>豬肉排</h4>
-                                            <p>NT$ 80</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="hamBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/meat6-1.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>火腿</h4>
-                                            <p>NT$ 60</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="meatXBtn">
-                                    <div class="self-card">
-                                        <div class="no-self-menu">
-                                            <i class="fa-solid fa-xmark self-x"></i>
-                                        </div>
-                                        <div class="no-self-txt-card">
-                                            <h4>不要肉</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="self-content" id="veggiePage">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-md-3">
-                            <div class="col">
-                                <button class="self-wrap" id="lettuceBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/lettuce1.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>生菜絲</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="tomatoBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/lettuce2.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>番茄</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="onionBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/lettuce4.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>洋蔥</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="picklesBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/lettuce5.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>醃黃瓜</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="chiliBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/lettuce6.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>醃辣椒</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="veggieXBtn">
-                                    <div class="self-card">
-                                        <div class="no-self-menu">
-                                            <i class="fa-solid fa-xmark self-x"></i>
-                                        </div>
-                                        <div class="no-self-txt-card">
-                                            <div class="no-self-txt-card">
-                                                <h4>不要蔬菜</h4>
+                    <div class="self-content  active" id="breadPage">
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <button class="self-wrap" id="classicBreadBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/bread1.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>經典麵包</h4>
+                                                <p>NT$ 20</p>
                                             </div>
                                         </div>
-                                    </div>
-                                </button>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="sesameBreadBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/bread2-2.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>芝麻麵包</h4>
+                                                <p>NT$ 25</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="muffinBreadBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/bread3.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>馬芬麵包</h4>
+                                                <p>NT$ 30</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="denmarkBreadBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/bread4.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>丹麥麵包</h4>
+                                                <p>NT$ 35</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="grainsBreadBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/bread5.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>雜糧麵包</h4>
+                                                <p>NT$ 35</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="lettuceBreadBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/bread6.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>生菜</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="self-content" id="meatPage">
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <button class="self-wrap" id="beefBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/meat1-1.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>4oz牛肉餅</h4>
+                                                <p>NT$ 80</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="chickenBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/meat2.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>南方炸雞</h4>
+                                                <p>NT$ 80</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="baconBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/meat3.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>脆培根</h4>
+                                                <p>NT$ 60</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="porkBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/meat4.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>豬肉排</h4>
+                                                <p>NT$ 80</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="hamBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/meat6-1.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>火腿</h4>
+                                                <p>NT$ 60</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="meatXBtn">
+                                        <div class="self-card">
+                                            <div class="no-self-menu">
+                                                <i class="fa-solid fa-xmark self-x"></i>
+                                            </div>
+                                            <div class="no-self-txt-card">
+                                                <h4>不要肉</h4>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="self-content" id="veggiePage">
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <button class="self-wrap" id="lettuceBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/lettuce1.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>生菜絲</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="tomatoBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/lettuce2.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>番茄</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="onionBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/lettuce4.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>洋蔥</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="picklesBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/lettuce5.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>醃黃瓜</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="chiliBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/lettuce6.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>醃辣椒</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="veggieXBtn">
+                                        <div class="self-card">
+                                            <div class="no-self-menu">
+                                                <i class="fa-solid fa-xmark self-x"></i>
+                                            </div>
+                                            <div class="no-self-txt-card">
+                                                <div class="no-self-txt-card">
+                                                    <h4>不要蔬菜</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="self-content" id="toppingPage">
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <button class="self-wrap" id="cheddarBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/cheese1.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>巧達起司</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="mozzBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/cheese2.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>莫札瑞拉</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="britishBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/cheese3.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>英式起司</h4>
+                                                <p>NT$ 20</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="toppingXBtn">
+                                        <div class="self-card">
+                                            <div class="no-self-menu">
+                                                <i class="fa-solid fa-xmark self-x"></i>
+                                            </div>
+                                            <div class="no-self-txt-card">
+                                                <h4>不要配料</h4>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="self-content" id="saucePage">
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col">
+                                    <button class="self-wrap" id="ketchupBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/sauce1.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>番茄醬</h4>
+                                                <p>NT$ 0</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="mustardBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/sauce2.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>黃芥末醬</h4>
+                                                <p>NT$ 0</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="spicyBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/sauce3.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>美式辣醬</h4>
+                                                <p>NT$ 0</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="honeyBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/sauce4.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>蜂蜜芥末</h4>
+                                                <p>NT$ 0</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="bbqBtn">
+                                        <div class="self-card">
+                                            <div class="self-pic-menu">
+                                                <img src="image/sauce6.png" alt="bread1">
+                                            </div>
+                                            <div class="self-txt-card">
+                                                <h4>BBQ醬</h4>
+                                                <p>NT$ 0</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="self-wrap" id="sauceXBtn">
+                                        <div class="self-card">
+                                            <div class="no-self-menu">
+                                                <i class="fa-solid fa-xmark self-x"></i>
+                                            </div>
+                                            <div class="no-self-txt-card">
+                                                <h4>不要醬</h4>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="self-content" id="toppingPage">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-md-3">
-                            <div class="col">
-                                <button class="self-wrap" id="cheddarBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/cheese1.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>巧達起司</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
+                <div class="self-box-wrap">
+                    <div class="self-box">
+                        <h3 class="title">您的漢堡</h3>
+                        <div class="choice-self">
+                            <div class="choice-list">
+                                <div class="item-choice" id="classicBread">
+                                    <span>經典麵包</span>
+                                    <button id="classicBreadX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="sesameBread">
+                                    <span>芝麻麵包</span>
+                                    <button id="sesameBreadX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="muffinBread">
+                                    <span>馬芬麵包</span>
+                                    <button id="muffinBreadX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="denmarkBread">
+                                    <span>丹麥麵包</span>
+                                    <button id="denmarkBreadX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="grainsBread">
+                                    <span>雜糧麵包</span>
+                                    <button id="grainsBreadX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="lettuceBread">
+                                    <span>生菜</span>
+                                    <button id="lettuceBreadX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col">
-                                <button class="self-wrap" id="mozzBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/cheese2.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>莫札瑞拉</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
+                            <div class="choice-list">
+                                <div class="item-choice" id="beef">
+                                    <span>4oz牛肉餅</span>
+                                    <button id="beefX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="chicken">
+                                    <span>南方炸雞</span>
+                                    <button id="chickenX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="bacon">
+                                    <span>脆培根</span>
+                                    <button id="baconX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="pork">
+                                    <span>豬肉排</span>
+                                    <button id="porkX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="ham">
+                                    <span>火腿</span>
+                                    <button id="hamX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="meatX">
+                                    <span>不要肉</span>
+                                    <button id="meatXX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col">
-                                <button class="self-wrap" id="britishBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/cheese3.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>英式起司</h4>
-                                            <p>NT$ 20</p>
-                                        </div>
-                                    </div>
-                                </button>
+                            <div class="choice-list">
+                                <div class="item-choice" id="lettuce">
+                                    <span>生菜絲</span>
+                                    <button id="lettuceX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="tomato">
+                                    <span>番茄</span>
+                                    <button id="tomatoX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="onion">
+                                    <span>洋蔥</span>
+                                    <button id="onionX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="pickles">
+                                    <span>醃黃瓜</span>
+                                    <button id="picklesX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="chili">
+                                    <span>醃辣椒</span>
+                                    <button id="chiliX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="veggieX">
+                                    <span>不要蔬菜</span>
+                                    <button id="veggieXX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="col">
-                                <button class="self-wrap" id="toppingXBtn">
-                                    <div class="self-card">
-                                        <div class="no-self-menu">
-                                            <i class="fa-solid fa-xmark self-x"></i>
-                                        </div>
-                                        <div class="no-self-txt-card">
-                                            <h4>不要配料</h4>
-                                        </div>
-                                    </div>
-                                </button>
+                            <div class="choice-list">
+                                <div class="item-choice" id="cheddar">
+                                    <span>巧達起司</span>
+                                    <button id="cheddarX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="mozz">
+                                    <span>莫札瑞拉</span>
+                                    <button id="mozzX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="british">
+                                    <span>英式起司</span>
+                                    <button id="britishX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="toppingX">
+                                    <span>不要配料</span>
+                                    <button id="toppingXX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="choice-list">
+                                <div class="item-choice" id="ketchup">
+                                    <span>番茄醬</span>
+                                    <button id="ketchupX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="mustard">
+                                    <span>黃芥末醬</span>
+                                    <button id="mustardX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="spicy">
+                                    <span>美式辣醬</span>
+                                    <button id="spicyX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="honey">
+                                    <span>蜂蜜芥末</span>
+                                    <button id="honeyX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="bbq">
+                                    <span>BBQ醬</span>
+                                    <button id="bbqX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
+                                <div class="item-choice" id="sauceX">
+                                    <span>不要醬</span>
+                                    <button id="sauceXX">
+                                        <i class="fa-solid fa-xmark x-choice"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="self-content" id="saucePage">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-md-3">
-                            <div class="col">
-                                <button class="self-wrap" id="ketchupBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/sauce1.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>番茄醬</h4>
-                                            <p>NT$ 0</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="mustardBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/sauce2.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>黃芥末醬</h4>
-                                            <p>NT$ 0</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="spicyBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/sauce3.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>美式辣醬</h4>
-                                            <p>NT$ 0</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="honeyBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/sauce4.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>蜂蜜芥末</h4>
-                                            <p>NT$ 0</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="bbqBtn">
-                                    <div class="self-card">
-                                        <div class="self-pic-menu">
-                                            <img src="image/sauce6.png" alt="bread1">
-                                        </div>
-                                        <div class="self-txt-card">
-                                            <h4>BBQ醬</h4>
-                                            <p>NT$ 0</p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="self-wrap" id="sauceXBtn">
-                                    <div class="self-card">
-                                        <div class="no-self-menu">
-                                            <i class="fa-solid fa-xmark self-x"></i>
-                                        </div>
-                                        <div class="no-self-txt-card">
-                                            <h4>不要醬</h4>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
+                        <div class="price-self">
+                            <span>NT$</span>
+                            <span id="selfPrice"></span>
+                        </div>
+                        <div class="self-info">
+                            <button class="red">完成</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="self-box-wrap">
-                <div class="self-box">
-                    <h3 class="title">您的漢堡</h3>
-                    <div class="choice-self">
-                        <div class="choice-list">
-                            <div class="item-choice" id="classicBread">
-                                <span>經典麵包</span>
-                                <button id="classicBreadX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="sesameBread">
-                                <span>芝麻麵包</span>
-                                <button id="sesameBreadX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="muffinBread">
-                                <span>馬芬麵包</span>
-                                <button id="muffinBreadX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="denmarkBread">
-                                <span>丹麥麵包</span>
-                                <button id="denmarkBreadX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="grainsBread">
-                                <span>雜糧麵包</span>
-                                <button id="grainsBreadX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="lettuceBread">
-                                <span>生菜</span>
-                                <button id="lettuceBreadX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="choice-list">
-                            <div class="item-choice" id="beef">
-                                <span>4oz牛肉餅</span>
-                                <button id="beefX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="chicken">
-                                <span>南方炸雞</span>
-                                <button id="chickenX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="bacon">
-                                <span>脆培根</span>
-                                <button id="baconX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="pork">
-                                <span>豬肉排</span>
-                                <button id="porkX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="ham">
-                                <span>火腿</span>
-                                <button id="hamX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="meatX">
-                                <span>不要肉</span>
-                                <button id="meatXX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="choice-list">
-                            <div class="item-choice" id="lettuce">
-                                <span>生菜絲</span>
-                                <button id="lettuceX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="tomato">
-                                <span>番茄</span>
-                                <button id="tomatoX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="onion">
-                                <span>洋蔥</span>
-                                <button id="onionX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="pickles">
-                                <span>醃黃瓜</span>
-                                <button id="picklesX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="chili">
-                                <span>醃辣椒</span>
-                                <button id="chiliX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="veggieX">
-                                <span>不要蔬菜</span>
-                                <button id="veggieXX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="choice-list">
-                            <div class="item-choice" id="cheddar">
-                                <span>巧達起司</span>
-                                <button id="cheddarX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="mozz">
-                                <span>莫札瑞拉</span>
-                                <button id="mozzX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="british">
-                                <span>英式起司</span>
-                                <button id="britishX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="toppingX">
-                                <span>不要配料</span>
-                                <button id="toppingXX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="choice-list">
-                            <div class="item-choice" id="ketchup">
-                                <span>番茄醬</span>
-                                <button id="ketchupX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="mustard">
-                                <span>黃芥末醬</span>
-                                <button id="mustardX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="spicy">
-                                <span>美式辣醬</span>
-                                <button id="spicyX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="honey">
-                                <span>蜂蜜芥末</span>
-                                <button id="honeyX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="bbq">
-                                <span>BBQ醬</span>
-                                <button id="bbqX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                            <div class="item-choice" id="sauceX">
-                                <span>不要醬</span>
-                                <button id="sauceXX">
-                                    <i class="fa-solid fa-xmark x-choice"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="price-self">
-                        <span>NT$</span>
-                        <span id="selfPrice"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="self-info">
-                <button class="red">完成</button>
-            </div>
+            
+
         </div>
         <div class="container-menu hidden" id="containerClassic">
             <div class="title-sticky">
@@ -1337,7 +1341,7 @@
             <div class="red-long"></div>
         </div>
     </div>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="info-footer">
             <div class="list-footer">
                 <a href="menu.html" class="item-footer">MENU</a>
@@ -1376,7 +1380,7 @@
                 <p>@copyright©2024 EVERYTHING BURGER CO . All rights reserved. </p>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <button onclick="scrollToTop()" id="scrollToTopBtn" class="topbtn">
         <i class="fa-solid fa-chevron-up"></i>
     </button>
