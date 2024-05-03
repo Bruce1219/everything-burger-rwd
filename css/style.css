@@ -439,6 +439,7 @@ a{
     border-bottom:solid 2px #eb222200;
     padding: 0 0 5px;
     transition: 0.1s;
+    cursor: pointer;
 }
 .type-menu ul li button:hover{
     border-bottom:solid 2px #EB2222;
