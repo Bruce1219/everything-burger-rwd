@@ -148,7 +148,7 @@
     align-items: center;
 }
 .content-cowork{
-    width: 80%;
+    width: 70%;
     position: relative;
 }
 .wrap-cowork{
@@ -168,6 +168,7 @@
 }
 .pic-cowork{
     width: 100%;
+    max-height: 400px;
     overflow: hidden;
 }
 .pic-cowork img{
@@ -182,6 +183,7 @@
     line-height: 1.6;
     color: #595959;
     padding: 20px;
+    vertical-align: middle;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -197,4 +199,45 @@
 }
 .coworkman{
     box-shadow:-15px 15px #EB2222;
+}
+@media screen  and (min-width:1000px){
+    .content-cowork{
+        width: 70%;
+        position: relative;
+    }
+    .wrap-cowork{
+        display: flex;
+    }
+    .pic-cowork{
+        width: 50%;
+        overflow: hidden;
+    }
+    .pic-cowork img{
+        width: 100%;
+        /* border-radius: 20px 0 0 20px; */
+        vertical-align: top;
+        transition: 0.5s;
+    }
+    .txt-cowork{
+        width: 50%;
+        letter-spacing: 2px;
+        line-height: 1.6;
+        color: #595959;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .txt-cowork h4{
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 0 20px;
+    }
+    .txt-cowork p{
+        font-size: 16px;
+        /* margin: 0 0 30px; */
+    }
+    .coworkman{
+        box-shadow:-15px 15px #EB2222;
+    }
 }
