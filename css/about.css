@@ -84,7 +84,7 @@
 }
 .box-logos{
     width: 100%;
-    height: 300vh;
+    height: 200vh;
 }
 .logostream{
     display: flex;
@@ -239,5 +239,55 @@
     }
     .coworkman{
         box-shadow:-15px 15px #EB2222;
+    }
+}
+.chef{
+    width: 100%;
+    /* height: 70vh; */
+    background-color: #eee;
+    padding: 0 0 30px;
+}
+.container-chef{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #595959;
+}
+.container-chef h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px 0 30px;
+}
+.item-chef{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    font-weight: bold;
+}
+.pic-chef{
+    border-radius: 300px;
+    border: solid 2px #EB2222;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    margin: 20px 0 ;
+}
+.pic-chef img{
+    width: 100%;
+    transition: 0.5s;
+}
+.pic-chef img:hover{
+    scale: 1.2;
+}
+@media screen and (min-width:768px){
+    .wrap-chef{
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+    .item-chef{
+        margin: 20px;
     }
 }
