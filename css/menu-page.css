@@ -10,6 +10,7 @@
     display: flex; 
     justify-content: center; 
     /* align-items: center; */
+    margin: 0 0 50px;
 }
 .wrap-intro{
     width: 100%;
@@ -37,7 +38,7 @@
     display: flex;
     flex-direction: column;
     line-height: 1.6;
-    /* justify-content: center; */
+    justify-content: center;
 }
 .txt-intro h3{
     font-size: 20px;
@@ -79,6 +80,49 @@
 .backToMenu:hover{ 
     color: #eb2222;
 }
+@media screen and (min-width:768px){
+    .section-intro{
+        width: 60%;
+        margin: auto;
+    }
+    .pic-intro img{
+        border-radius: 20px 20px 0 0;
+    }
+    .txt-intro{
+        border-radius: 0 0 20px 20px;
+    }
+}   
+@media screen and (min-width:1000px){
+    .section-intro{
+        width: 70%;
+        margin: auto;
+    }
+    .wrap-intro{
+        display: flex;
+    }
+    .pic-intro{
+        width: 50%;
+    }
+    .pic-intro img{
+        border-radius: 20px 0 0 20px;
+    }
+    .txt-intro{
+        width: 50%;
+        border-radius: 0 20px 20px 0;
+    }
+    .backToMenu{
+        text-decoration: none;
+        color: #595959;
+        letter-spacing: 2px;
+        position: fixed;
+        left: 50px;
+        top: 100px;
+        transition: 0.5s;
+    }
+}
+
+/* 成分 */
+
 .nutrition{
     width: 100%;
     background-image: url(../image/bg2.jpg);
@@ -131,6 +175,25 @@
     font-size: 14px;
 
 }
+@media screen and (min-width:768px){ 
+    .ingredients{
+        width: 70%;
+        border-radius: 20px;
+    }
+    .title{
+        font-size: 24px;
+        margin: 40px 0 20px;
+    }
+    .pic-ingredients{
+        width: 50%;
+    }
+    .txt-left{
+        font-size: 16px;
+    }
+    .txt-right{
+        font-size: 16px;
+    }
+}
 .nutrition-info{
     /* border-top: solid 1px #595959; */
     width: 100%;
@@ -173,4 +236,12 @@
 }
 hr{
     width: 80%;
+}
+@media screen and (min-width:768px){ 
+    .nutrition-info{
+        width: 50%;
+    }
+    .container-info{
+        border-radius: 20px;
+    }
 }
