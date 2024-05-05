@@ -87,6 +87,10 @@ body{
     }
     .pic-loca img{
         max-height: 300px;
+        max-width: 400px;
+    }
+    .txt-loca h3{
+        width: 90%;
     }
     .item-loca{
         width: 90%;
