@@ -62,6 +62,9 @@ body{
 .item-loca p{
     margin: 5px 0;
 }
+.item-loca span{
+    display: inline-block;
+}
 @media screen and (min-width:768px){
     .container-location{
         width: 80%;
