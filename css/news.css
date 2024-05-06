@@ -18,7 +18,12 @@
     aspect-ratio: 16/9;
     background-image: linear-gradient(to top,#000000 0%,#ffffff00 50%);
 }
-
+.content-banner{
+    position: absolute;
+    left:10%;
+    bottom: 15%;
+    z-index: 1;
+}
 /* news */
 
 .news{

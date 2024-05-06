@@ -1,0 +1,26 @@
+.header{
+    background-image: url(../image/news-burger3.jpg);
+    width: 100%;
+    max-height: 70vh;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 70vh;
+    aspect-ratio: 16/9;
+    background-image: linear-gradient(to top,#000000 0%,#ffffff00 50%);
+}
+.content-banner{
+    position: absolute;
+    left:10%;
+    bottom: 15%;
+    z-index: 1;
+}
