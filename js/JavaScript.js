@@ -10,7 +10,6 @@ function showHiddenNav(){
 }
 
 
-console.log(hbCloseButton);
 function hiddenNav(){
     var hiddenNav = document.getElementById("hidden-nav");
     hiddenNav.style.height = "0%";
@@ -19,7 +18,7 @@ function hiddenNav(){
 
 hbButton.onclick = showHiddenNav;
 hbCloseButton.onclick = hiddenNav;
-hiddenNavbar.onclick = hiddenNav;
+// hiddenNavbar.onclick = hiddenNav;
 
 //---------------logo---------------//
 

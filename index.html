@@ -34,7 +34,7 @@
                     <a href="contact.html" class="nav-item">CONTACT</a>
                 </li>
                 <li>
-                    <a href="menu.html" class="nav-item white" id="btn-white">ORDER</a>
+                    <button class="nav-item white cartBtn">ORDER</button>
                 </li>
             </ul>
             <button class="hb" id="hbButton">
@@ -59,7 +59,7 @@
                     <a href="contact.html" class="item-hidden">CONTACT</a>
                 </li>
                 <li>
-                    <a href="menu.html" class="item-hidden white">ORDER</a>
+                    <button class="item-hidden white cartBtn">ORDER</button>
                 </li>
             </ul>
             <button class="hb-hidden" id="hbCloseButton">
@@ -81,6 +81,11 @@
                 <a href="https://maps.app.goo.gl/WcYc2ZUXTdnvDQSc6" target="_blank">320桃園市中壢區復興路46號</a>
             </div>
         </nav>
+        <div class="order-cart" id="orederCart">
+            <button class="hb-hidden" id="cartCloseButton">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
         <div class="content-banner">
             <div class="title-content-banner">
                 <h1>EVERYTHING</h1>
@@ -816,5 +821,6 @@
         <i class="fa-solid fa-chevron-up"></i>
     </button>
     <script src="./js/JavaScript.js"></script>
+    <script src="/js/oreder-cart.js"></script>
 </body>
 </html>
