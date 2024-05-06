@@ -84,13 +84,18 @@
 }
 .box-logos{
     width: 100%;
-    height: 200vh;
+    height: 300vh;
 }
 .logostream{
     display: flex;
 }
 .logos{
-    width: 300px;
+    width: 150px;
+}
+@media screen and (min-width:768px) {
+    .logos{
+        width: 300px;
+    }
 }
 
 /* fonder */
