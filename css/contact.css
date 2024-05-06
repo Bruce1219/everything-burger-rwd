@@ -123,6 +123,7 @@
 }
 .info-contact{
     width: 60%;
+    max-width: 300px;
     display: flex;
     flex-direction: column; 
     align-items:start;
@@ -134,7 +135,8 @@
     /* justify-content: center; */
     align-items: center;
     margin: 0 auto 20px ;
-    width: 300px;
+    width: 100%;
+
 }
 .wrap-info i{
     color: #eb2222;
@@ -158,6 +160,7 @@
     }
     .info-contact{
         width: 100%;
+        max-width: none;
         display: flex;
         flex-direction: row;
         align-items: center;
