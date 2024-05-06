@@ -131,9 +131,10 @@
 }
 .wrap-info{
     display: flex;
+    /* justify-content: center; */
     align-items: center;
     margin: 0 auto 20px ;
-    width: 100%;
+    width: 300px;
 }
 .wrap-info i{
     color: #eb2222;
@@ -142,6 +143,7 @@
 }
 .wrap-info span{
     color: #595959;
+    font-weight: bold;
 }
 .wrap-info p{
     color: #595959;
