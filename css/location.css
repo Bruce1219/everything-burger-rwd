@@ -23,9 +23,13 @@ body{
 }
 .card-loca{
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .pic-loca{
     width: 100%;
+
 }
 .pic-loca img{
     width: 100%;
