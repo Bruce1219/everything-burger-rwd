@@ -34,7 +34,7 @@
                     <a href="contact.html" class="nav-item">CONTACT</a>
                 </li>
                 <li>
-                    <a href="menu.html" class="nav-item white" id="btn-white">ORDER</a>
+                    <button class="nav-item white cartBtn">ORDER</button>
                 </li>
             </ul>
             <button class="hb" id="hbButton">
@@ -59,7 +59,7 @@
                     <a href="contact.html" class="item-hidden">CONTACT</a>
                 </li>
                 <li>
-                    <a href="menu.html" class="item-hidden white">ORDER</a>
+                    <button class="item-hidden white cartBtn">ORDER</button>
                 </li>
             </ul>
             <button class="hb-hidden" id="hbCloseButton">
@@ -81,6 +81,237 @@
                 <a href="https://maps.app.goo.gl/WcYc2ZUXTdnvDQSc6" target="_blank">320桃園市中壢區復興路46號</a>
             </div>
         </nav>
+        <div class="order-cart" id="orederCart">
+            <a href="menu.html" class="backToMenu">
+                <i class="fa-solid fa-left-long"></i>
+                <span>Back to Menu</span>
+            </a>
+            <div class="container-order">
+                <div class="order-title">
+                    <h2>您的購物車</h2>
+                </div>
+                <div class="order-list">
+                    <div class="order-item" id="cheeseBeefOrder">
+                        <span>起司牛肉堡</span>
+                        <span value="150" class="single-price">NT$ 150*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $150</span>
+                        <button id="cheeseBeefX">
+                            <i class="fa-solid fa-xmark orderX" ></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="peanutBeefOrder">
+                        <span>花生醬牛肉堡</span>
+                        <span value="160" class="single-price">NT$ 160*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $160</span>
+                        <button id="peanutBeefX">
+                            <i class="fa-solid fa-xmark orderX" ></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="doubleBeefOrder">
+                        <span>雙層起司牛肉堡</span>
+                        <span value="200" class="single-price">NT$ 200*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $200</span>
+                        <button id="doubleBeefX">
+                            <i class="fa-solid fa-xmark orderX" ></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="cheeseBaconOrder">
+                        <span>培根起司牛肉堡</span>
+                        <span value="180" class="single-price">NT$ 180*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $180</span>
+                        <button id="cheeseBaconX">
+                            <i class="fa-solid fa-xmark orderX" ></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="doubleBaconOrder">
+                        <span>雙層培根牛肉堡</span>
+                        <span value="220" class="single-price">NT$ 220*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $220</span>
+                        <button id="doubleBaconX">
+                            <i class="fa-solid fa-xmark orderX" ></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="southChickenOrder">
+                        <span>南方炸雞堡</span>
+                        <span value="150" class="single-price">NT$ 150*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $150</span>
+                        <button id="southChickenX">
+                            <i class="fa-solid fa-xmark orderX" ></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="doubleChickenOrder">
+                        <span>雙層炸雞堡</span>
+                        <span value="180" class="single-price">NT$ 180*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $180</span>
+                        <button id="doubleChickenX">
+                            <i class="fa-solid fa-xmark orderX" ></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="onionMushOrder">
+                        <span>酸奶蘑菇堡</span>
+                        <span value="150" class="single-price">NT$ 150*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $150</span>
+                        <button id="onionMushX">
+                            <i class="fa-solid fa-xmark orderX" ></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="spicyBeefOrder">
+                        <span>墨西哥牛肉堡</span>
+                        <span value="170" class="single-price">NT$ 170*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $170</span>
+                        <button id="spicyBeefX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="friesOrder">
+                        <span>經典薯條</span>
+                        <span value="60" class="single-price">NT$ 60*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $60</span>
+                        <button id="friesX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="trufflesOrder">
+                        <span>松露薯條</span>
+                        <span value="100" class="single-price">NT$ 100*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $100</span>
+                        <button id="trufflesX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="cheeseFriesOrder">
+                        <span>起司薯條</span>
+                        <span value="80" class="single-price">NT$ 80*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $80</span>
+                        <button id="cheeseFriesX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="chocolateOrder">
+                        <span>巧克力派</span>
+                        <span value="100" class="single-price">NT$ 100*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $100</span>
+                        <button id="chocolateX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="appleOrder">
+                        <span>蘋果派</span>
+                        <span value="100" class="single-price">NT$ 100*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $100</span>
+                        <button id="appleX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="bananaOrder">
+                        <span>香蕉派</span>
+                        <span value="100" class="single-price">NT$ 100*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $100</span>
+                        <button id="bananaX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="colaOrder">
+                        <span>可口可樂</span>
+                        <span value="50" class="single-price">NT$ 50*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $50</span>
+                        <button id="colaX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="milkTeaOrder">
+                        <span>焦糖冰奶茶</span>
+                        <span value="50" class="single-price">NT$ 50*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $50</span>
+                        <button id="milkTeaX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="blackTeaOrder">
+                        <span>冰紅茶</span>
+                        <span value="50" class="single-price">NT$ 50*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $50</span>
+                        <button id="blackTeaX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="chocolateShakeOrder">
+                        <span>巧克力奶昔</span>
+                        <span value="110" class="single-price">NT$ 110*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $110</span>
+                        <button id="chocolateShakeX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="ShakeOrder">
+                        <span>香草奶昔</span>
+                        <span value="100" class="single-price">NT$ 100*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $100</span>
+                        <button id="ShakeX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                    <div class="order-item" id="strawberryOrder">
+                        <span>草莓奶昔</span>
+                        <span value="110" class="single-price">NT$ 110*1</span>
+                        <!-- <input type="number" class="number" value="1"> -->
+                        <span class="price">NT $110</span>
+                        <button id="strawberryX">
+                            <i class="fa-solid fa-xmark orderX"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="totalPrice">
+                    <span></span>
+                    <span>Total</span>
+                    <span id="totalPrice"></span>
+                </div>
+                <div class="pay">
+                    <div class="online white">線上付款</div>
+                    <div class="real white">現場付款</div>
+                </div>
+                <div class="contact-order">
+                    <div class="name-phone">
+                        <div class="item-order">
+                            <span>姓名</span>
+                            <input type="text">
+                        </div>
+                        <div class="item-order">
+                            <span>電話</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="item-order mail-order">
+                        <span>信箱</span>
+                        <input type="text">
+                    </div>
+                </div>
+                <button class="btnOrder red">送出</button>
+            </div>
+            <button class="hb-hidden" id="cartCloseButton">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
         <div class="titlewrap-about">
             <span class="tag-about">最新消息</span>
             <div>
@@ -162,5 +393,6 @@
 
 
     <script src="./js/JavaScript.js"></script>
+    <script src="./js/oreder-cart.js"></script>
 </body>
 </html>

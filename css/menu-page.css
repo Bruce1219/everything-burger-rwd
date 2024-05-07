@@ -63,7 +63,7 @@
     background-color: #fff;
 
 }
-.backToMenu{
+.backMenu{
     text-decoration: none;
     color: #595959;
     letter-spacing: 2px;
@@ -72,12 +72,12 @@
     top: 75px;
     transition: 0.5s;
 }
-.backToMenu span{
+.backMenu span{
     letter-spacing: 2px;
     font-weight: bold;
     /* display: block; */
 }
-.backToMenu:hover{ 
+.backMenu:hover{ 
     color: #eb2222;
 }
 @media screen and (min-width:768px){
@@ -110,7 +110,7 @@
         width: 50%;
         border-radius: 0 20px 20px 0;
     }
-    .backToMenu{
+    .backMenu{
         text-decoration: none;
         color: #595959;
         letter-spacing: 2px;
