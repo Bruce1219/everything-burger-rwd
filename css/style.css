@@ -250,7 +250,7 @@ a{
     color: #595959;
     font-size: 12px;
     margin: 100px 0;
-    padding: 30px 0;
+    padding: 30px 0 0;
 }
 .order-title{
     font-size: 24PX;
@@ -270,7 +270,7 @@ a{
     border-radius: 10px;
     padding: 5px 10px ;
     display: grid;
-    grid-template-columns: 1.5fr 1fr .5fr 1fr .2fr;
+    grid-template-columns: 1.5fr 1.2fr .5fr 1fr .2fr;
     margin: 5px;
 }
 .order-item input{
@@ -300,6 +300,41 @@ a{
     grid-template-columns: 3fr 1fr 1.5fr;
     margin: 5px;
 }
+.pay{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+.contact-order{
+    margin: 10px;
+    width: 90%;
+
+}
+.contact-order input{
+    border: solid 1px #595959;
+    border-radius: 5px;
+    padding: 0 5px;
+    outline: none;
+    height: 25px;
+}
+.name-phone{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px;
+}
+.item-order span{
+    display: block;
+    margin: 0 0 5px;
+}
+.mail-order input{
+    width: 100%;
+    box-sizing: border-box;
+}
+.btnOrder{
+    margin: 20px auto;
+}
 @media screen and (min-width:768px){
     .container-order{
         width: 60%;
@@ -310,6 +345,24 @@ a{
     }
     .totalPrice{
         width: 80%;
+    }
+    .contact-order{
+        margin: 10px;
+        width: 80%;
+    }
+}
+@media screen and (min-width:1000px){
+    .container-order{
+        width: 50%;
+    }
+    .order-item{
+        width: 70%;
+    }
+    .totalPrice{
+        width: 70%;
+    }
+    .contact-order{
+        width: 70%;
     }
 }
 /* ------------header---------- */
