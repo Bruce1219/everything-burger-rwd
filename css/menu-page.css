@@ -2,8 +2,9 @@
     background-image: none;
     background-color: #D9D9D9;
     width: 100%;
-    max-height: 100vh;
-    aspect-ratio: 1/1;
+    max-height: none;
+    min-height: 100vh;
+    aspect-ratio: auto;
 }
 .section-intro{
     width: 100%;
