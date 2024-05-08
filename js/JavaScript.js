@@ -18,7 +18,7 @@ function hiddenNav(){
 
 hbButton.onclick = showHiddenNav;
 hbCloseButton.onclick = hiddenNav;
-// hiddenNavbar.onclick = hiddenNav;
+hiddenNavbar.onclick = hiddenNav;
 
 //---------------logo---------------//
 
